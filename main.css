@@ -1,0 +1,171 @@
+.all {
+    margin: auto;
+    width: 50%;
+    height: 50%;
+  }
+  .count{
+    border: 1px solid;
+    height: 25px;
+    width: 50%;
+    margin-left: 59px;
+    text-align: center;
+  }
+  .playButtons {
+    position: fixed;
+  }
+  body {
+    background-color: #EDCDC2;
+    display: block;
+  }
+  button {
+    height: 50px;
+    width: 50px;
+    background-color: #E8C4E2;
+    box-shadow: 0 5px #665;
+    border-radius: 145px;
+     display: block;
+  }
+  .controlButtonsAndDisplay {
+    left: 165px;
+    bottom: 80px;
+    top: 110px;
+    position: relative;
+    border-radius: 500px;
+    border: 10px solid;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    border-color: #808080;
+  }
+  .startAndRestart {
+    left: 70px;
+    top: 20px;
+    height: 50px;
+  }
+  .start {
+    border-radius: 4px;
+    height: 20px;
+    width: 40%;
+    margin-left: 73px;
+    margin-top: 10px;
+  }
+  .startOver {
+    border-radius: 4px;
+    height: 20px;
+    width: 40%;
+    margin-left: 73px;
+  }
+  .strict {
+    border-radius: 4px;
+    height: 20px;
+    width: 50%;
+    margin-left: 62px;
+    margin-top: 10px;
+  }
+  .one {
+    background-color: green;
+    height: 300px;
+    width: 300px;
+    border: 10px solid;
+    border-top-left-radius: 700%;
+    margin-right: -5px;
+    border-color:	#808080;
+  }
+  .one-active {
+    background-color: #8FBC8F;
+    box-shadow: 0 5px #666;
+    transform: scale(1.2);
+  }
+  .two {
+    background-color: red;
+    border: 10px solid;
+    height: 300px;
+    width: 300px;
+    border-top-right-radius: 700%;
+    border-color:	#808080;
+    margin-left: 300px;
+    margin-top: -300px;
+  }
+  .two-active {
+    background-color: #F08080;
+    box-shadow: 0 5px #666;
+    transform: scale(1.2);
+  }
+  .three {
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+    border: 10px solid;
+    margin-top: -60px;
+    border-bottom-left-radius: 700%;
+    margin-right: -5px;
+    border-color:	#808080;
+  }
+  .three-active {
+    background-color: #ADD8E6;
+    box-shadow: 0 5px #666;
+    transform: scale(1.2);
+  }
+  .four {
+    background-color: yellow;
+    height: 300px;
+    width: 300px;
+    border: 10px solid;
+    border-bottom-right-radius: 700%;
+    border-color:	#808080;
+      margin-left: 300px;
+    margin-top: -300px;
+  }
+  .four-active {
+    background-color: #FAFAD2;
+    box-shadow: 0 5px #666;
+    transform: scale(1.2);
+  }
+  .strict {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 130px;
+    margin-top: -40px;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #778899;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #DCDCDC;
+  }
+  input:checked + .slider {
+    background-color: #5E92FC;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  .strictModeToggle {
+    border: none;
+    margin-left: 30px;
+    margin-top: 40px;
+    padding: 0 14px;
+  }
+  .result{
+  
+    font-family: 'georgia';
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+  
+  }

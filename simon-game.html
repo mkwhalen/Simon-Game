@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simon Game</title>
+
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+    <body>
+        <div class="all">
+            <div class="playButtons">
+              <button id="1" class="one" onClick="greenSound(), playerEasy(this)">
+            </button>
+              <button id="2" class="two" onClick="redSound(), playerEasy(this)">
+          </button>
+              <br/>
+              <button id="3" class="three" onClick="blueSound(), playerEasy(this)">
+          </button>
+              <button id="4" class="four" onClick="yellowSound(), playerEasy(this)">
+          </button>
+            </div>
+            <br/>
+            <br/>
+            <div class="controlButtonsAndDisplay">
+              <div class="startAndRestart">
+                <button id="start" class="start" onClick="simonSays()">
+            Start
+          </button>
+                <button id="startOver" class="startOver" onClick="startOver()">
+            Restart
+          </button>
+              </div>
+              <p id="count" class="count">
+              </p>
+              <p id="result" class="result">
+                Simon Game
+              </p>
+            <p class="strictModeToggle">
+              Strict Mode:
+              </p>
+              <label id="strict" class="strict" onClick="">
+            <input id="checkbox" type="checkbox"/>
+            <span class="slider"></span>
+          </label>
+            </div>
+          </div>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="simon-game.js"></script>
+    </body>
+</html>
